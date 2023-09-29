@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Valuta Kalkulator</title>
+	
+	
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: rgb(255, 255, 255);">
+	
+	<h1 class="heading text-center display-2">
+		Valuta Kalkulator
+	</h1>
+	<hr>
+	<img src="unnamed.png" alt="" width="300">
+	
+	<div class="container">
+		<div class="main">
+			<div class="form-group">
+				<label for="oamount">
+					BELØP Å KONVERTERE:
+				</label>
+				<input type="text" class="form-control searchBox" placeholder="0.00" id="oamount">
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text">Fra</span>
+						</div>
+						<select class="form-control from" id="sel1">
+							<option value="">Velg en…</option>
+							<option value="USD">USD (US Dollar)</option>
+							<option value="NOK">NOK (Norske Kroner)</option>
+							<option value="EUR">EU (Euro)</option>
+							<option value="GBP">BP (Britiske Pund)</option>
+							<option value="SEK">SK (Svensk Kroner)</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text">Til</span>
+						</div>
+						<select class="form-control to" id="sel2">
+							<option value="">Velg en…</option>
+							<option value="USD">USD (US Dollar)</option>
+							<option value="NOK">NOK (Norske Kroner)</option>
+							<option value="EUR">EU (Euro)</option>
+							<option value="GBP">BP (Britiske Pund)</option>
+							<option value="SEK">SK (Svensk Kroner)</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="text-center">
+
+				
+				<button class="btn btn-primary convert m-2" type="submit">
+					Konvert
+				</button>
+				
+				<button class="btn btn-primary m-2" onclick="clearVal()">
+					Nullstille
+				</button>
+			</div>
+
+		</div>
+
+		<div id="finalAmount" class="text-center">
+
+			<h2>Konvertert beløp:
+				<span class="finalValue"></span>
+			</h2>
+		</div>
+	</div>
+
+
+	
+	<script src="script.js"></script>
+</body>
+</html>
+
